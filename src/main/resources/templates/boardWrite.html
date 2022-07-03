@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="bootstrap.css">
 </head>
 <body>
 
 
 
-<form method="post" action="/board/writepro">
+<form method="post" action="/board/writepro" enctype="multipart/form-data">
     <div>
     <input type="text" name="title"/>
 
     <textarea type="text" name="content"></textarea>
-        <button type="submit">전송</button>
+        <button type="submit">등록</button>
     </div>
+
+    <input type="file" name="file">
 </form>
 </body>
 </html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+
+<form method="post" th:action="@{/board/update/{id}(id=${board.id})}">
+  <div>
+    <input type="text" name="title" th:value ="${board.title}"/>
+    <textarea type="text" name="content" th:text ="${board.content}"></textarea>
+    <input type="file" name="file">
+    <button type="submit">수정</button>
+  </div>
+</form>
+</body>
+</html>
